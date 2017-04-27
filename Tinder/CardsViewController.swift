@@ -12,29 +12,33 @@ class CardsViewController: UIViewController {
   
   var initialCenter: CGPoint?
   
-  @IBOutlet weak var ryanImage: UIImageView!
+//  @IBOutlet weak var ryanImage: UIImageView!
   
-  @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
-    
-    if sender.state == .changed {
-      
-      let translation = sender.translation(in: view)
-      
-      let velocityX = sender.velocity(in: view).x
-      
-      if velocityX > 0 {
-        
-        ryanImage.center = CGPoint(x: (initialCenter?.x)! + translation.x, y: (initialCenter?.y)!)
-      }
-      
-    }
-  }
+//  @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
+
+//    if sender.state == .changed {
+//      
+//      let translation = sender.translation(in: view)
+//      
+//      let velocityX = sender.velocity(in: view).x
+//      
+//      if velocityX > 0 {
+//        
+//        ryanImage.center = CGPoint(x: (initialCenter?.x)! + translation.x, y: (initialCenter?.y)!)
+//      }
+//      
+//    }
+//  }
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    let customView = CustomView()
+    customView.frame = CGRect(x: 5, y: 65, width: 304, height: 304)
+    view.addSubview(customView)
     
-    initialCenter = ryanImage.center
+//    initialCenter = ryanImage.center
   }
   
   override func didReceiveMemoryWarning() {
