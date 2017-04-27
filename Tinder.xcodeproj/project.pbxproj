@@ -21,7 +21,7 @@
 		F4D04F861EB0A9B600C21C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D04F891EB0A9B600C21C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4D04F8B1EB0A9B600C21C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4D04F911EB0AAC600C21C9D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = Tinder/CardsViewController.swift; sourceTree = "<group>"; };
+		F4D04F911EB0AAC600C21C9D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,6 @@
 		F4D04F731EB0A9B600C21C9D = {
 			isa = PBXGroup;
 			children = (
-				F4D04F911EB0AAC600C21C9D /* CardsViewController.swift */,
 				F4D04F7E1EB0A9B600C21C9D /* Tinder */,
 				F4D04F7D1EB0A9B600C21C9D /* Products */,
 			);
@@ -55,8 +54,9 @@
 		F4D04F7E1EB0A9B600C21C9D /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
-				F4D04F7F1EB0A9B600C21C9D /* AppDelegate.swift */,
+				F4D04F911EB0AAC600C21C9D /* CardsViewController.swift */,
 				F4D04F831EB0A9B600C21C9D /* Main.storyboard */,
+				F4D04F7F1EB0A9B600C21C9D /* AppDelegate.swift */,
 				F4D04F861EB0A9B600C21C9D /* Assets.xcassets */,
 				F4D04F881EB0A9B600C21C9D /* LaunchScreen.storyboard */,
 				F4D04F8B1EB0A9B600C21C9D /* Info.plist */,
@@ -299,6 +299,7 @@
 				F4D04F901EB0A9B600C21C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
